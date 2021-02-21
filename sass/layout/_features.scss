@@ -3,18 +3,25 @@
 }
 
 .features {
-  display: flex;
-  min-height: 251px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    min-height: 251px;
+  }
 }
 
 .features-thumbs {
-  @extend %flex;
-  justify-content: center;
-  margin-bottom: 30px;
-
-  width: 270px;
-  height: 120px;
   background-color: $main-bg-color;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .features-items {

@@ -121,15 +121,36 @@ img {
   display: block;
 }
 
-.btn-subscribe, .modal-btn-thumb, .page-header, .navigation, .contacts-nav, .contacts-nav-link, .features-thumbs, .examples-articles, .social-link, .clients-link, .social-footer-link {
+.btn-subscribe, .modal-btn-thumb, .contacts-nav-link, .examples-articles, .social-link, .clients-link, .social-footer-link {
   display: flex;
   align-items: center;
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  outline: 2px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .buttons.primary {
@@ -457,6 +478,20 @@ img {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
 /* logo */
 .logo {
   display: block;
@@ -483,8 +518,11 @@ img {
 }
 
 /* site-nav */
-.site-nav {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav .link {
@@ -511,16 +549,19 @@ img {
   color: #2196f3;
 }
 
-.site-nav .link.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
+@media screen and (min-width: 767px) {
+  .site-nav .link.current::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
 }
 
 .site-nav-item:not(:last-child) {
@@ -528,8 +569,16 @@ img {
 }
 
 /* contacts-nav */
-.contacts-nav {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .contacts-nav {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-nav {
+    margin-left: auto;
+  }
 }
 
 .contacts-nav-item:not(:last-child) {
@@ -604,17 +653,31 @@ img {
   padding-bottom: 94px;
 }
 
-.features {
-  display: flex;
-  min-height: 251px;
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    min-height: 251px;
+  }
 }
 
 .features-thumbs {
-  justify-content: center;
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 1200px) {
+  .features-thumbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .features-items {
@@ -644,8 +707,10 @@ img {
   padding-bottom: 94px;
 }
 
-.examples {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .examples {
+    display: flex;
+  }
 }
 
 .examples-item {
@@ -681,8 +746,11 @@ img {
   background-color: #f5f4fa;
 }
 
-.team {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .team {
+    width: 768px;
+    display: flex;
+  }
 }
 
 .team-item {
@@ -763,6 +831,7 @@ img {
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .clients-link {
@@ -804,10 +873,18 @@ img {
   margin-right: 30px;
 }
 
-.container.footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .container.footer {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container.footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .footer-contacts {
@@ -914,10 +991,18 @@ img {
   fill: currentColor;
 }
 
-.footer-form {
-  display: flex;
-  align-items: flex-end;
-  width: 570px;
+@media screen and (min-width: 768px) {
+  .footer-form {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+    align-items: flex-end;
+    width: 570px;
+  }
 }
 
 .form-field {

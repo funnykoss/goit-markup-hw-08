@@ -1,7 +1,12 @@
 .container.footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .footer-contacts {
@@ -125,9 +130,15 @@
 }
 
 .footer-form {
-  display: flex;
-  align-items: flex-end;
-  width: 570px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+    width: 570px;
+  }
 }
 
 .form-field {
