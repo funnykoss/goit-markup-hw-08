@@ -3,33 +3,60 @@
 }
 
 .features {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-bottom: -15px;
   }
   @media screen and (min-width: 1200px) {
     min-height: 251px;
+    display: flex;
   }
 }
 
 .features-thumbs {
   background-color: $main-bg-color;
+  @extend %flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 120px;
+  }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
     width: 270px;
     height: 120px;
   }
 }
 
 .features-items {
-  width: 270px;
-  height: 101px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 226px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 354px;
+    height: 226px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 101px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
