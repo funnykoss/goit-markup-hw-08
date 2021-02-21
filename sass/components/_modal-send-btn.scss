@@ -1,0 +1,28 @@
+.modal-btn-send {
+  text-align: center;
+}
+
+.btn-send {
+  padding: 10px 56px;
+
+  @include font(16px, 700, 1.87);
+  letter-spacing: 0.06em;
+
+  min-width: 200px;
+  background-color: $accent-color;
+  color: $background-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+
+  &:focus,
+  &:hover {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

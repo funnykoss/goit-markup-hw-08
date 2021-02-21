@@ -1,0 +1,24 @@
+.btn-subscribe {
+  @extend %flex;
+  justify-content: center;
+  padding: 10px;
+  min-width: 200px;
+
+  @include font(16px, 700, 1.87);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $background-color;
+  background-color: $accent-color;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0;
+
+  cursor: pointer;
+}
+
+.btn-icon {
+  margin-left: 10px;
+}
