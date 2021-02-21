@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./base/fonts";
 @import "./utils/visually-hidden";
 @import "./base/common";
 @import "./utils/mixins";
@@ -10,5 +11,4 @@
 @import "./layout/header-portfolio";
 @import "./layout/filters";
 @import "./layout/projects";
-@import "./components/btn-subscribe";
 @import "./layout/footer";

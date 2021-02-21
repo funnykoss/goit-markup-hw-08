@@ -53,3 +53,87 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
+
+.btn-subscribe {
+  @extend %flex;
+  justify-content: center;
+  padding: 10px;
+  min-width: 200px;
+
+  @include font(16px, 700, 1.87);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $background-color;
+  background-color: $accent-color;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0;
+
+  cursor: pointer;
+}
+
+.btn-icon {
+  margin-left: 10px;
+}
+
+.modal-btn-thumb {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  @extend %flex;
+  justify-content: center;
+
+  background-color: $background-color;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.modal-icon-close {
+  fill: currentColor;
+
+  transition-property: color;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+}
+
+.modal-btn-send {
+  text-align: center;
+}
+
+.btn-send {
+  padding: 10px 56px;
+
+  @include font(16px, 700, 1.87);
+  letter-spacing: 0.06em;
+
+  min-width: 200px;
+  background-color: $accent-color;
+  color: $background-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+
+  &:focus,
+  &:hover {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

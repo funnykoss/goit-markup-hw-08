@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./base/fonts";
 @import "./utils/visually-hidden";
 @import "./base/common";
 @import "./utils/mixins";
@@ -7,14 +8,11 @@
 @import "./components/btn";
 @import "./components/section-title";
 @import "./components/backdrop";
-@import "./components/modal-btn";
 @import "./components/modal-form";
-@import "./components/modal-send-btn";
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/features";
 @import "./layout/examples";
 @import "./layout/team";
 @import "./layout/clients";
-@import "./components/btn-subscribe";
 @import "./layout/footer";
