@@ -1,0 +1,86 @@
+.section-wokers {
+  @include padding(94px, 94px);
+
+  background-color: $main-bg-color;
+}
+
+.team {
+  display: flex;
+}
+
+.team-item {
+  border-radius: 0px 0px 4px 4px;
+  background-color: $background-color;
+  width: 270px;
+  height: 428px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.card-description {
+  @include padding(30px, 30px);
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.card-description-title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.card-description-text {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: $title-text-color;
+}
+
+.team-img {
+  display: block;
+}
+
+.social-thumbs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link {
+  @extend %flex;
+  justify-content: center;
+  color: $icon-color;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  transition-property: background-color, color;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $background-color;
+  }
+}
+
+.social-icons {
+  fill: currentColor;
+}
+
+.social-items {
+  width: 44px;
+  height: 44px;
+}

@@ -85,7 +85,7 @@ svg {
   clip: rect(0 0 0 0);
 }
 
-.btn-subscribe, .modal-btn-thumb, .page-header {
+.btn-subscribe, .modal-btn-thumb, .page-header, .features-thumbs, .examples-articles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -836,6 +836,131 @@ svg {
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section-features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features {
+  min-height: 251px;
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: -15px;
+    margin-bottom: -15px;
+  }
+}
+
+.features-thumbs {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  width: 450px;
+  height: 120px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-thumbs {
+    width: 354px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-thumbs {
+    width: 270px;
+    height: 120px;
+  }
+}
+
+.features-items {
+  width: 450px;
+  height: 226px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-items {
+    width: 354px;
+    height: 251px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-items {
+    width: 270px;
+    height: 251px;
+  }
+}
+
+.features-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.section-examples {
+  padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-examples {
+    display: none;
+  }
+}
+
+.examples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.examples-item {
+  position: relative;
+}
+
+.examples-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.examples-articles {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.examples-articles-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
 }
