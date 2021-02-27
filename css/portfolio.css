@@ -53,6 +53,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .btn-subscribe, .modal-btn-thumb, .page-header, .navigation, .contacts-nav, .contacts-nav-link, .social-footer-link {
@@ -67,12 +69,12 @@ img {
 .container {
   width: 100%;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
   }
 }
 
