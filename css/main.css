@@ -957,14 +957,27 @@ img {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients-link {
@@ -1008,10 +1021,7 @@ img {
 .clients-thumbs {
   width: 170px;
   height: 90px;
-}
-
-.clients-thumbs:not(:last-child) {
-  margin-right: 30px;
+  margin: 15px;
 }
 
 .container.footer {
