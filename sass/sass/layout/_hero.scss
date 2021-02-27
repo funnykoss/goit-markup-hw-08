@@ -1,5 +1,5 @@
 .hero {
-  @include padding(118px, 60px);
+  @include padding(118px, 118px);
   text-align: center;
   margin: 0 auto;
   width: 480px;
@@ -23,7 +23,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    @include padding(118px, 204px);
+    @include padding(118px, 118px);
     width: 768px;
     height: 400px;
     background-image: linear-gradient(
