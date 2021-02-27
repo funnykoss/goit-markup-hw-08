@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(100%);
+  transform: translateX(-50%) translateY(-100%);
   width: 100%;
   max-width: 480px;
   max-height: 796px;
@@ -11,7 +11,6 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 48px 40px;
-  overflow: scroll;
 
   background-color: $background-color;
 
@@ -20,7 +19,11 @@
   transition-timing-function: $bezier-animation;
 
   &.is-open {
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(0%);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 

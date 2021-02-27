@@ -1,28 +1,90 @@
 .hero {
-  @include padding(200px, 200px);
+  @include padding(118px, 118px);
   text-align: center;
-  max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
+  max-width: 480px;
+  height: 400px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../imeges/background-img.jpg);
+    url(../../../imeges/bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   background-color: #c4c4c4;
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+    screen and (min-resolution: 192dpi) and (min-width: 480px),
+    screen and (min-resolution: 2dppx) and (min-width: 480px) {
+    & {
+      background-image: url(../../../imeges/bg-tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    @include padding(118px, 118px);
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../../imeges/bg-tablet.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+      screen and (min-resolution: 192dpi) and (min-width: 768px),
+      screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      & {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../../../imeges/bg-tablet@2x.jpg);
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    @include padding(200px, 200px);
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../../imeges/bg-descktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+      screen and (min-resolution: 192dpi) and (min-width: 1200px),
+      screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+      & {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../../../imeges/bg-descktop@2x.jpg);
+      }
+    }
+  }
 }
+
 .hero-title {
+  @include font(26px, 900, 1.62);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $background-color;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  max-width: 696px;
-  @include font(44px, 900, 1.36);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  max-width: 360px;
 
-  color: $background-color;
+  @media screen and (min-width: 768px) {
+    max-width: 360px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    @include font(44px, 900, 1.36);
+  }
 }

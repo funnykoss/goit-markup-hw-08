@@ -1,33 +1,31 @@
-.header {
-  position: relative;
-}
-
 .page-header {
   @extend %flex;
   justify-content: space-between;
+  align-items: center;
+}
 
-  @media screen and (min-width: 1200px) {
+.navigation {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
 }
 
-/* logo */
+// /* logo */
 
 .logo {
   display: block;
   @include padding(24px, 24px);
-  margin-right: 88px;
 
   font-family: $logo-font;
-  @include font(24px, 700, 1.19);
+  @include font(26px, 700, 1.19);
   letter-spacing: 0.03em;
   text-decoration: none;
   cursor: pointer;
+  margin-right: 88px;
 
   color: $primary-text-color;
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
 }
@@ -40,73 +38,38 @@
   color: $accent-color;
 }
 
-.header-menu {
-  @media screen and (max-width: 767px) {
-    position: absolute;
-    padding: 48px 40px;
-    top: 100%;
-    left: 0;
-    width: 480px;
-    height: 796px;
-    background-color: $background-color;
-    display: none;
-
-    &.is-open {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-grow: 1;
-  }
-}
-
 /* site-nav */
 
 .site-nav {
-  @media screen and (min-width: 768px) {
-    display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
-}
+  display: flex;
 
-.site-nav-link {
-  @include font(40px, 500, 1.17);
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: $primary-text-color;
-
-  transition-property: color;
-  transition-duration: $time-animation;
-  transition-timing-function: $bezier-animation;
-
-  @media screen and (min-width: 768px) {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14px;
-    letter-spacing: 0.02em;
+  .link {
+    display: block;
     @include padding(32px, 32px);
-  }
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    fill: $accent-color;
-  }
 
-  &.current {
-    position: relative;
-    color: $accent-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 
-    @media screen and (min-width: 768px) {
-      display: block;
-      @include padding(32px, 32px);
+    color: $primary-text-color;
 
-      font-weight: 500;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: $time-animation;
+    transition-timing-function: $bezier-animation;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+
+    &.current {
+      position: relative;
+      color: $accent-color;
 
       &::after {
         content: "";
@@ -127,125 +90,92 @@
 }
 
 .site-nav-item {
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 32px;
-    }
+  &:not(:last-child) {
+    margin-right: 50px;
   }
+}
+
+/* contacts-nav */
+
+.contacts-nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
+    margin-left: auto;
+  }
+}
+
+.contacts-nav-item {
+  @media screen and (min-width: 768px) {
     &:not(:last-child) {
-      margin-right: 50px;
+      margin-bottom: 10px;
     }
   }
 }
 
-.navigation {
-  @media screen and (min-width: 768px) {
-    margin-right: 84px;
+@media screen and (min-width: 1200px) {
+  .contacts-nav-item:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
 .contacts-nav-link {
-  @include font(34px, 500, 1.17);
   font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  text-decoration: none;
+
   color: $title-text-color;
 
+  transition-property: color;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    @include font(12px, 500, 1.16);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include padding(32px, 32px);
+    @include font(14px, 500, 1.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     letter-spacing: 0.02em;
-
-    @media screen and (min-width: 1200px) {
-      @include padding(32px, 32px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      font-weight: 500;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-
-      color: $title-text-color;
-
-      transition-property: color;
-      transition-duration: $time-animation;
-      transition-timing-function: $bezier-animation;
-
-      &:hover,
-      &:focus {
-        color: $accent-color;
-        fill: $accent-color;
-      }
-    }
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
   }
 }
 
-.contacts-nav-icon {
-  display: none;
+.icon-mail {
+  display: block;
+  margin-right: 10px;
+  fill: currentColor;
 
-  @media screen and (min-width: 768px) {
-    display: block;
-    margin-right: 10px;
-    fill: currentColor;
-
-    transition-property: fill;
-    transition-duration: $time-animation;
-    transition-timing-function: $bezier-animation;
-  }
-}
-.contacts-nav {
-  margin-bottom: 64px;
-  display: flex;
-  flex-direction: column-reverse;
-  @media screen and (min-width: 768px) {
-    min-width: 138px;
-    margin-bottom: 0;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
+  transition-property: fill;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
 }
 
-.contacts-nav-item + .contacts-nav-item {
-  margin-bottom: 32px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 10px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: 30px;
-    margin-bottom: 0;
-  }
-}
+.icon-phone {
+  display: block;
+  margin-right: 10px;
+  fill: currentColor;
 
-.header-social-list {
-  display: flex;
-  @include font(18px, 500, 1.22);
-  letter-spacing: 0.02em;
-  color: $accent-color;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.header-social-items {
-  &::after {
-    content: " ";
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    margin-left: 10px;
-  }
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
+  transition-property: fill;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
 }

@@ -1,31 +1,27 @@
-.header-menu-btn {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  color: $primary-text-color;
-
+.burger-button {
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.header-menu-btn-icon {
-  fill: currentColor;
+
+.burger-button,
+.mobile-close-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
-.header-menu-btn .icon-close {
-  display: none;
+.mobile-close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
-.header-menu-btn.is-open {
-  & .icon-close {
-    display: block;
-  }
-
-  & .icon-menu {
-    display: none;
-  }
+.burger-button:hover,
+.burger-button:focus,
+.mobile-close-button:hover,
+.mobile-close-button:focus {
+  color: $accent-color;
 }
 
 .buttons.primary {
@@ -51,43 +47,6 @@
     background-color: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
-}
-
-.btn-send {
-  padding: 10px 56px;
-
-  @include font(16px, 700, 1.87);
-  letter-spacing: 0.06em;
-
-  min-width: 200px;
-  background-color: $accent-color;
-  color: $background-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-width: 0;
-  cursor: pointer;
-
-  transition-property: background-color;
-  transition-duration: $time-animation;
-  transition-timing-function: $bezier-animation;
-
-  &:focus,
-  &:hover {
-    background: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-}
-
-.modal-icon-close {
-  fill: currentColor;
-
-  transition-property: color;
-  transition-duration: $time-animation;
-  transition-timing-function: $bezier-animation;
-}
-
-.modal-btn-send {
-  text-align: center;
 }
 
 .buttons-filters {
@@ -165,5 +124,42 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+}
+
+.modal-icon-close {
+  fill: currentColor;
+
+  transition-property: color;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+}
+
+.modal-btn-send {
+  text-align: center;
+}
+
+.btn-send {
+  padding: 10px 56px;
+
+  @include font(16px, 700, 1.87);
+  letter-spacing: 0.06em;
+
+  min-width: 200px;
+  background-color: $accent-color;
+  color: $background-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: $time-animation;
+  transition-timing-function: $bezier-animation;
+
+  &:focus,
+  &:hover {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
