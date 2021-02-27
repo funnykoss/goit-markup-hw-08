@@ -1,3 +1,27 @@
+.section-filters {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.filters-items {
+  &:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+      margin-bottom: 0;
+    }
+  }
+}
+
 .filters-items .filter-all {
   background-color: $accent-color;
   color: $main-bg-color;
@@ -10,17 +34,5 @@
   &:first-child:focus {
     background-color: $main-bg-color;
     color: $primary-text-color;
-  }
-}
-
-.section-filters {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.filters-items {
-  &:not(:last-child) {
-    margin-right: 8px;
   }
 }
