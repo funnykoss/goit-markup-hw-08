@@ -1,3 +1,23 @@
+.burger-button,
+.mobile-close-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.burger-button:hover,
+.burger-button:focus,
+.mobile-close-button:hover,
+.mobile-close-button:focus {
+  color: $accent-color;
+}
+
 .buttons.primary {
   padding: 10px 30px;
   min-width: 200px;

@@ -1,12 +1,17 @@
 .page-header {
   @extend %flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation {
-  @extend %flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
-/* logo */
+// /* logo */
 
 .logo {
   display: block;
@@ -33,6 +38,9 @@
 /* site-nav */
 
 .site-nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   display: flex;
 
   .link {
@@ -87,6 +95,9 @@
 /* contacts-nav */
 
 .contacts-nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @extend %flex;
   margin-left: auto;
 }
