@@ -3,5 +3,9 @@
 }
 
 .section-portfolio {
-  @include padding(94px, 94px);
+  @include padding(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include padding(94px, 94px);
+  }
 }
