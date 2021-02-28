@@ -6,11 +6,11 @@
 }
 
 .features {
-  margin: -15px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     min-height: 251px;
+    margin: -15px;
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
@@ -18,12 +18,12 @@
 }
 
 .features-items {
-  width: 450px;
-  height: 226px;
-  margin: 15px;
+  width: 100%;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
