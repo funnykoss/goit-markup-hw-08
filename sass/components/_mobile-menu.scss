@@ -67,7 +67,7 @@
 .mobile-contacts-link {
   @include font(34px, 500, 1.18);
   letter-spacing: 0.02em;
-  color: $title-text-color;
+  color: $accent-color;
 
   transition-property: color;
   transition-duration: $time-animation;
@@ -79,7 +79,16 @@
   }
 }
 
+.mobile-contacts-link.mail {
+  @include font(24px, 500, 1.17);
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+}
+
 .mobile-social-menu {
+  @media screen and (max-width: 479px) {
+    font-size: 100%;
+  }
   display: flex;
   @include font(18px, 500, 1.22);
   letter-spacing: 0.02em;

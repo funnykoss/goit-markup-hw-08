@@ -855,7 +855,7 @@ img {
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: #2196f3;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -868,6 +868,14 @@ img {
   color: #2196f3;
 }
 
+.mobile-contacts-link.mail {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
 .mobile-social-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -877,6 +885,12 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-social-menu {
+    font-size: 100%;
+  }
 }
 
 .mobile-social-text:not(:last-child) {
