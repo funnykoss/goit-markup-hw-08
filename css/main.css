@@ -534,7 +534,7 @@ img {
 
 .checkbox:checked + .modal-label-checkbox::before {
   background-color: #2196f3;
-  background-image: url(../imeges/checkbox/icon-check.svg);
+  background-image: url(../images/checkbox/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: #2196f3;
@@ -613,7 +613,7 @@ img {
   }
 }
 
-.site-nav .link {
+.site-nav-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -630,17 +630,17 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
+.site-nav-link:hover, .site-nav-link:focus {
   color: #2196f3;
   fill: #2196f3;
 }
 
-.site-nav .link.current {
+.site-nav-link.current {
   position: relative;
   color: #2196f3;
 }
 
-.site-nav .link.current::after {
+.site-nav-link.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -776,7 +776,8 @@ img {
           transform: translateX(-50%) translateY(-100%);
   width: 100%;
   max-width: 480px;
-  max-height: 796px;
+  height: 100vh;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,10 +811,6 @@ img {
   }
 }
 
-.mobile-site-nav {
-  margin-bottom: 305px;
-}
-
 .mobile-site-items:not(:last-child) {
   margin-bottom: 37px;
 }
@@ -841,7 +838,11 @@ img {
   fill: #2196f3;
 }
 
-.contacts-nav-mobile {
+.mobile-contacts {
+  margin-top: auto;
+}
+
+.mobile-contacts-list {
   margin-bottom: 64px;
 }
 
@@ -902,8 +903,8 @@ img {
   margin: 0 auto;
   max-width: 480px;
   height: 400px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../imeges/bg-mob.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../imeges/bg-mob.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/bg-mob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -912,7 +913,7 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
   .hero {
-    background-image: url(../../../imeges/bg-tablet@2x.jpg);
+    background-image: url(../../../images/bg-tablet@2x.jpg);
   }
 }
 
@@ -922,15 +923,15 @@ img {
     padding-bottom: 118px;
     max-width: 768px;
     height: 400px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../imeges/bg-tablet.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../imeges/bg-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/bg-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/bg-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../imeges/bg-tablet@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../imeges/bg-tablet@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/bg-tablet@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/bg-tablet@2x.jpg);
   }
 }
 
@@ -940,8 +941,8 @@ img {
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../imeges/bg-descktop.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../imeges/bg-descktop.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/bg-descktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/bg-descktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -950,8 +951,8 @@ img {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../imeges/bg-descktop@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../imeges/bg-descktop@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/bg-descktop@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/bg-descktop@2x.jpg);
   }
 }
 

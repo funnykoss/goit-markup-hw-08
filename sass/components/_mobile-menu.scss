@@ -5,7 +5,8 @@
   transform: translateX(-50%) translateY(-100%);
   width: 100%;
   max-width: 480px;
-  max-height: 796px;
+  height: 100vh;
+  z-index: 1;
 
   display: flex;
   flex-direction: column;
@@ -25,10 +26,6 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
-
-.mobile-site-nav {
-  margin-bottom: 305px;
 }
 
 .mobile-site-items:not(:last-child) {
@@ -55,7 +52,11 @@
   }
 }
 
-.contacts-nav-mobile {
+.mobile-contacts {
+  margin-top: auto;
+}
+
+.mobile-contacts-list {
   margin-bottom: 64px;
 }
 
