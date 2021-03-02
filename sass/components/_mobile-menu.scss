@@ -65,6 +65,9 @@
 }
 
 .mobile-contacts-link {
+  @media screen and (max-width: 479px) {
+    font-size: 26px;
+  }
   @include font(34px, 500, 1.18);
   letter-spacing: 0.02em;
   color: $accent-color;
@@ -80,6 +83,9 @@
 }
 
 .mobile-contacts-link.mail {
+  @media screen and (max-width: 479px) {
+    font-size: 20px;
+  }
   @include font(24px, 500, 1.17);
   letter-spacing: 0.02em;
   color: $title-text-color;
@@ -87,7 +93,7 @@
 
 .mobile-social-menu {
   @media screen and (max-width: 479px) {
-    font-size: 100%;
+    font-size: 12px;
   }
   display: flex;
   @include font(18px, 500, 1.22);

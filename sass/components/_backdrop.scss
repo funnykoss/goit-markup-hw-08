@@ -42,6 +42,10 @@
   transition-duration: $time-animation;
   transition-timing-function: $bezier-animation;
 
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
   @media screen and (min-width: 1200px) {
     max-width: 528px;
     height: 95%;
@@ -129,6 +133,10 @@
 }
 
 .textarea-field {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
   padding: 11px 16px;
   resize: none;
   width: 370px;

@@ -3,9 +3,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.eot");
+  src: url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.svg#Roboto") format("svg");
+  src: local(""), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.woff2") format("woff2"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.woff") format("woff"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.ttf") format("truetype"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 
@@ -14,9 +14,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.eot");
+  src: url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.svg#Roboto") format("svg");
+  src: local(""), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.woff2") format("woff2"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.woff") format("woff"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.ttf") format("truetype"), url("../..//fonts/roboto-v20-latin_cyrillic-ext_cyrillic-500.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 
@@ -25,9 +25,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.eot");
+  src: url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.svg#Roboto") format("svg");
+  src: local(""), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.woff2") format("woff2"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.woff") format("woff"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.ttf") format("truetype"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-700.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 
@@ -36,9 +36,9 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.eot");
+  src: url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.svg#Roboto") format("svg");
+  src: local(""), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.woff2") format("woff2"), url("../..//fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.woff") format("woff"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.ttf") format("truetype"), url("../../fonts/roboto-v20-latin_cyrillic-ext_cyrillic-900.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 
@@ -47,9 +47,9 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/raleway-v19-latin_cyrillic-regular.eot");
+  src: url("../../fonts/raleway-v19-latin_cyrillic-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/raleway-v19-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v19-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/raleway-v19-latin_cyrillic-regular.woff") format("woff"), url("../fonts/raleway-v19-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/raleway-v19-latin_cyrillic-regular.svg#Raleway") format("svg");
+  src: local(""), url("../../fonts/raleway-v19-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v19-latin_cyrillic-regular.woff2") format("woff2"), url("../../fonts/raleway-v19-latin_cyrillic-regular.woff") format("woff"), url("../fonts/raleway-v19-latin_cyrillic-regular.ttf") format("truetype"), url("../../fonts/raleway-v19-latin_cyrillic-regular.svg#Raleway") format("svg");
   /* Legacy iOS */
 }
 
@@ -58,9 +58,9 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/raleway-v19-latin_cyrillic-700.eot");
+  src: url("../../fonts/raleway-v19-latin_cyrillic-700.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/raleway-v19-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v19-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/raleway-v19-latin_cyrillic-700.woff") format("woff"), url("../fonts/raleway-v19-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/raleway-v19-latin_cyrillic-700.svg#Raleway") format("svg");
+  src: local(""), url("../../fonts/raleway-v19-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-700.woff2") format("woff2"), url("../../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-700.woff") format("woff"), url("../../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-regular.ttf") format("truetype"), url("../../fonts/raleway-v19-latin_cyrillic-700.svg#Raleway") format("svg");
   /* Legacy iOS */
 }
 
@@ -395,6 +395,12 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
@@ -508,6 +514,12 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 479px) {
+  .textarea-field {
+    width: 100%;
+  }
 }
 
 .textarea-field:focus, .textarea-field:hover {
@@ -930,6 +942,12 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-contacts-link {
+    font-size: 26px;
+  }
+}
+
 .mobile-contacts-link:hover, .mobile-contacts-link:focus {
   color: #2196f3;
 }
@@ -940,6 +958,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-contacts-link.mail {
+    font-size: 20px;
+  }
 }
 
 .mobile-social-menu {
@@ -955,7 +979,7 @@ img {
 
 @media screen and (max-width: 479px) {
   .mobile-social-menu {
-    font-size: 100%;
+    font-size: 12px;
   }
 }
 
@@ -1003,7 +1027,6 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     background-color: #c4c4c4;
   }
 }
@@ -1039,6 +1062,7 @@ img {
     height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-descktop.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-descktop.jpg);
+    background-size: cover;
   }
 }
 
