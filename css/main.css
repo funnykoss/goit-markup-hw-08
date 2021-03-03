@@ -641,6 +641,10 @@ img {
   border-radius: 2px;
 }
 
+.site-nav-item {
+  font-weight: 500;
+}
+
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
