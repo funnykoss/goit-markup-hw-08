@@ -123,7 +123,7 @@ img {
   height: auto;
 }
 
-.btn-subscribe, .modal-btn-thumb, .header-portfolio, .page-header, .social-footer-thumbs, .social-footer-link, .footer-form, .form-field {
+.btn-subscribe, .modal-btn-thumb, .portfolio, .page-header, .social-footer-thumbs, .social-footer-link, .footer-form, .form-field {
   display: flex;
   align-items: center;
 }
@@ -443,9 +443,12 @@ img {
 }
 
 .header-portfolio {
+  border-bottom: 1px solid #ececec;
+}
+
+.portfolio {
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .page-header {
@@ -715,6 +718,10 @@ img {
   }
 }
 
+.projects-items {
+  outline: 1px solid #f5f4fa;
+}
+
 @media screen and (max-width: 767px) {
   .projects-items:not(:last-child) {
     margin-bottom: 30px;
@@ -724,7 +731,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects-items {
     width: calc((100% - 60px) / 2);
-    outline: 1px solid #f5f4fa;
     margin: 15px;
   }
 }
@@ -732,7 +738,6 @@ img {
 @media screen and (min-width: 1200px) {
   .projects-items {
     width: calc((100% - 60px) / 3);
-    outline: 1px solid #f5f4fa;
   }
   .projects-items:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -744,6 +749,7 @@ img {
 
 .projects-link {
   display: block;
+  width: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
